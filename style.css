@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff91;
+    color: rgba(0, 0, 0, 0.795);
+    font-size: 62.25%;
+
+
+}
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    
+}
+
+.calculator{
+    background-color: rgba(0, 0, 0, 0.306);
+    width: 35vw;
+    padding: 0.5rem;
+    border-radius:1rem;
+    -webkit-border-radius:1rem;
+    -moz-border-radius:1rem;
+    -ms-border-radius:1rem;
+    -o-border-radius:1rem;
+    -webkit-border-radius:1rem;
+}
+
+/* --------------------------------header------------------------------------------ */
+
+.header{
+    /* background-color: black; */
+    background-color: rgba(255, 255, 255, 0.743);
+    /* color: white; */
+    color: black;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+
+.dark_light{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+
+    & .fas{
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
+.cal_header{
+    padding-top:1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: end;
+}
+
+.input{
+    width: 100%;
+    font-size: 1rem
+}
+.output{
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: end;
+}
+
+
+/* ---------------------------------buttons--------------------------------------------- */
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    /* background-color: black; */
+    background-color: white;
+    /* color: white; */
+    color: black;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+
+    margin-top: 0.3rem;
+    font-size: 1.5rem;
+
+
+    & .button{
+        background-color: #d1c6c687;
+        height: 3rem;
+        /*width: 3rem;
+        */display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius:2rem ;
+        -webkit-border-radius:2rem ;
+        -moz-border-radius:2rem ;
+        -ms-border-radius:2rem ;
+        -o-border-radius:2rem ;
+        cursor: pointer;
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+/* ---------------------------------responsive------------------------------------------------ */
+
+@media screen and (max-width: 800px){
+    .calculator{
+        width: 80vw;
+    }
+    .buttons{
+         font-size: 1.2rem;
+
+         & .button{
+            background-color: #d1c6c687;
+            height: 2.5rem;
+        }
+    }
+    
+}
